@@ -1,3 +1,4 @@
 export default function hasValuesFromArray(set, arr) {
-  return set.intersection(new Set(arr)).size === arr.length;
+  const newSet = new Set(arr);
+  return set.intersection(newSet).size === arr.length;
 }
